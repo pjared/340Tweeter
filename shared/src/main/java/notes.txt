@@ -1,0 +1,24 @@
+    -UserPresenter::25
+
+-MAKE SURE THAT ALL VIEWS ARE PAGINATED
+
+TA QUESTIONS:
+    -Need help seeing what's wrong with follow service proxy - need to fix interface with alias
+    -Need help in writing one lambda backend point and should be able to do rest
+
+Ask how to use this script
+aws lambda update-function-code --function-name tweeter_clone_create_post --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name tweeter_clone_get_followers --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name tweeter_clone_get_following --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name tweeter_clone_get_posts --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name tweeter_clone_login --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name tweeter_clone_register --zip-file fileb://./server/build/libs/server-all.jar
+
+aws lambda update-function-code --function-name getStory --zip-file fileb://./server/build/libs/server-all.jar
+
+gradle tab -> server -> shadow -> shadowjar, run upload.bat
+
+-mocking except for integration tests
+-Need to add getFollowCount to main/user activities
+
+-Need to make sure count tasks are working correctly

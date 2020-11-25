@@ -1,0 +1,14 @@
+aws lambda update-function-code --function-name getStory --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name get_following_count --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name get_follower_count --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name logout --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name isFollowing --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name get_following --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name get_followers --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name get_feed --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name register --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name postStatus --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name login --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name follow --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name unfollow --zip-file fileb://./server/build/libs/server-all.jar
+aws lambda update-function-code --function-name updateUser --zip-file fileb://./server/build/libs/server-all.jar
